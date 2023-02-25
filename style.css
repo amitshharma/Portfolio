@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -75,15 +76,16 @@ section .title::after{
 /* navbar styling */
 .navbar{
     position: fixed;
+    background: #111;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    padding: 15px 0  10px 10px;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: #59b256;
+    background: black;
 }
 .navbar .max-width{
     display: flex;
@@ -91,16 +93,13 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #fff;
+    color: white;
     font-size: 35px;
     font-weight: 600;
-}
-.navbar .logo a span{
-    color: #59b256;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-    color: #fff;
+    color: white;
 }
 .navbar .menu li{
     list-style: none;
@@ -108,24 +107,28 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: #fff;
+    color: white;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: #59b256;
+    color: white;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: red;
 }
+
 /* menu btn styling */
 .menu-btn{
     color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
+}
+.menu-btn.fasfa-bars{
+    color: #fff;
 }
 .scroll-up-btn{
     position: fixed;
@@ -157,7 +160,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    /* background: url("images/banner.jpg") no-repeat center; */
+    background: url("images/banner.jpg") no-repeat center;
     background-color: #333;
     height: 100vh;
     color: rgb(255, 255, 255);
@@ -175,36 +178,44 @@ section .title::after{
 }
 .home .home-content .text-1{
     font-size: 27px;
+    color: #111;
+
 }
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    color: #111;
+
 }
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
+    color: #111;
 }
 .home .home-content .text-3 span{
-    color: #59b256;
+    color: black;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: #59b256;
-    color: #fff;
+    background: black;
+    color: white;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid #59b256;
+    border: 2px solid black;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: #59b256;
     background: none;
+    background-color: transparent;
+    color: black;
 }
+
+
 /* about section styling */
 .about .title::after{
     content: "who i am";
@@ -366,6 +377,8 @@ section .title::after{
 .skills-content .right .mysql::before{
     width: 50%;
 }
+
+
 /* teams section styling */
 .teams .title::after{
     content: "what i did";
@@ -429,8 +442,26 @@ section .title::after{
     background: #59b256!important;
 }
 /* contact section styling */
+
+.contact{
+    display: flex;
+    background: url("images/skills.jpg") no-repeat center;
+    background-color: white;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contact .max-width .title{
+    letter-spacing: 20px;
+    color: #111;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 1000;
+}
 .contact .title::after{
-    content: "get in touch";
+    content: "";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -462,7 +493,7 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: white;
 }
 .contact .right form .fields{
     display: flex;
@@ -515,12 +546,12 @@ section .title::after{
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: #59b256;
-  border: 2px solid #59b256;
+  background: black;
+  border: 2px solid black;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: #59b256;
+  color: white;
   background: none;
 }
 /* footer section styling */
