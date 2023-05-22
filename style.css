@@ -368,13 +368,13 @@ section .title::after{
 .skills-content .right .css::before{
     width: 70%;
 }
-.skills-content .right .reactjs::before{
+.skills-content .right .Reactjs::before{
     width: 60%;
 }
-.skills-content .right .nodejs::before{
+.skills-content .right .Nodejs::before{
     width: 60%;
 }
-.skills-content .right .javascript::before{
+.skills-content .right .Javascript::before{
     width: 60%;
 }
 
